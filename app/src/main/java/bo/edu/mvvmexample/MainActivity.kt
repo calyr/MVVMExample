@@ -18,16 +18,12 @@ class MainActivity : AppCompatActivity() {
         liveDataString = LiveDataString()
         liveDataString.cadena.observe(this, Observer(::updateUi))
 
-
         button.setOnClickListener {
             counter++
             //textView.text = counter.toString()
             liveDataString.cambiarValor(counter.toString())
         }
-
-
     }
-
     fun updateUi(s: String) {
         textView.text = s
     }
@@ -42,5 +38,4 @@ class LiveDataString: ViewModel() {
     fun cambiarValor(string: String) {
         _cadena.value = string
     }
-
 }

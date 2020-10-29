@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVVMExample</string>
+    <string name="login_success">SUCCESS LOGIN</string>
+    <string name="login_error">ERROR LOGIN</string>
 </resources>
